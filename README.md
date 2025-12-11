@@ -51,7 +51,7 @@ The project includes:
 
 ---
 
-## 🧠 Machine Learning Pipeline
+## Machine Learning Pipeline
 
 ### **1. Load Dataset**
 
