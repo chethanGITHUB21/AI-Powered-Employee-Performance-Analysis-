@@ -25,7 +25,6 @@ The project includes:
 
 - Python
 - Flask
-- NumPy
 - Pandas
 - Scikit-learn
 - XGBoost
@@ -35,15 +34,12 @@ The project includes:
 
 - HTML
 - CSS
-- (Optional) JavaScript
 
 ---
 
 ## Required Python Packages
 
-- Install manually:
 - pandas
-- numpy
 - scikit-learn
 - xgboost
 - flask
