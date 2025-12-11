@@ -71,7 +71,7 @@ The project includes:
 
 Using `train_test_split()`:
 
-### **4. Data correlation using HeatMap**
+### **4. Data correlation Analysis using HeatMap**
 
 <img width="1536" height="754" alt="heatmap_correlation" src="https://github.com/user-attachments/assets/8b8c5941-4b17-44e0-9c12-21efa92ac575" />
 
