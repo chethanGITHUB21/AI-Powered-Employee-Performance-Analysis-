@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Productivity Prediction</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #f7f7f7;
+        margin: 0;
+        padding: 0;
+      }
+
+      h2 {
+        text-align: center;
+        margin-top: 30px;
+        font-size: 28px;
+        color: #333;
+        letter-spacing: 1px;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+
+      form {
+        max-width: 900px;
+        background: white;
+        margin: 40px auto;
+        padding: 25px 40px;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      }
+
+      .form-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px 40px;
+      }
+
+      label {
+        font-weight: bold;
+        margin-bottom: 5px;
+        display: block;
+        color: #333;
+      }
+
+      input {
+        width: 100%;
+        padding: 10px;
+        font-size: 15px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        outline: none;
+      }
+
+      input:focus {
+        border-color: #4caf50;
+        box-shadow: 0 0 4px rgba(76, 175, 80, 0.5);
+      }
+
+      .submit-btn {
+        text-align: center;
+        margin-top: 30px;
+      }
+
+      button {
+        padding: 12px 30px;
+        background: #4caf50;
+        color: white;
+        border: none;
+        font-size: 17px;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: 0.2s;
+      }
+
+      button:hover {
+        background: #45a049;
+        transform: scale(1.05);
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Enter Employee Productivity Details</h2>
+
+    <!-- IMPORTANT: method="POST" and action="/pred" must match Flask -->
+    <form action="/pred" method="POST">
+      <label>Quarter:</label>
+      <input type="number" name="quarter" required /><br /><br />
+
+      <label>Department:</label>
+      <input type="number" name="department" required /><br /><br />
+
+      <label>Team:</label>
+      <input type="number" name="team" required /><br /><br />
+
+      <label>Targeted Productivity:</label>
+      <input
+        type="number"
+        step="any"
+        name="targeted_productivity"
+        required
+      /><br /><br />
+
+      <label>SMV:</label>
+      <input type="number" step="any" name="smv" required /><br /><br />
+
+      <label>WIP:</label>
+      <input type="number" step="any" name="wip" required /><br /><br />
+
+      <label>Over Time:</label>
+      <input type="number" step="any" name="over_time" required /><br /><br />
+
+      <label>Incentive:</label>
+      <input type="number" step="any" name="incentive" required /><br /><br />
+
+      <label>Idle Time:</label>
+      <input type="number" step="any" name="idle_time" required /><br /><br />
+
+      <label>Idle Men:</label>
+      <input type="number" name="idle_men" required /><br /><br />
+
+      <label>No of Style Change:</label>
+      <input type="number" name="no_of_style_change" required /><br /><br />
+
+      <label>No of Workers:</label>
+      <input type="number" name="no_of_workers" required /><br /><br />
+
+      <label>Year:</label>
+      <input type="number" name="year" required /><br /><br />
+
+      <label>Month:</label>
+      <input type="number" name="month" required /><br /><br />
+
+      <label>day number:</label>
+      <input type="number" name="day_num" required /><br /><br />
+
+      <label>Weekdays:</label>
+      <input type="number" name="weekday" required /><br /><br />
+
+      <a href="/pred"><button type="submit">Submit</button></a>
+    </form>
+  </body>
+</html>

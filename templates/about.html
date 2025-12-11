@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Project</title>
+    <style>
+      body {
+        background: #f7f7f7;
+        font-family: Arial, sans-serif;
+        padding: 20px;
+        line-height: 1.6;
+      }
+      h1,
+      h2 {
+        color: #333;
+      }
+      .container {
+        background: white;
+        padding: 25px;
+        border-radius: 10px;
+        max-width: 900px;
+        margin: auto;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      code {
+        background: #eee;
+        padding: 5px;
+        border-radius: 5px;
+        display: block;
+        margin: 8px 0;
+      }
+      ul {
+        margin-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Employee Productivity Prediction — AI App</h1>
+      <p>
+        This web application predicts
+        <strong>employee productivity</strong> using a Machine Learning model
+        trained on various workplace factors.
+      </p>
+
+      <h2>📦 Packages Used</h2>
+      <ul>
+        <li>Flask</li>
+        <li>Pandas</li>
+        <li>NumPy</li>
+        <li>Scikit-learn</li>
+        <li>XGBoost</li>
+        <li>Pickle</li>
+      </ul>
+
+      <h2>🧠 ML Pipeline Overview</h2>
+      <ol>
+        <li>Load and clean dataset</li>
+        <li>Preprocess data & handle missing values</li>
+        <li>Split dataset (80% train, 20% test)</li>
+        <li>Train XGBoost Regressor model</li>
+        <li>
+          Evaluate model using:
+          <ul>
+            <li>MSE</li>
+            <li>MAE</li>
+            <li>R² Score</li>
+          </ul>
+        </li>
+        <li>Save trained model using Pickle</li>
+        <li>Build Flask backend for predictions</li>
+        <li>Create HTML frontend form</li>
+      </ol>
+
+      <h2>📊 Model Used</h2>
+      <p>
+        <strong>XGBoost Regressor</strong> — chosen because it performs
+        extremely well for structured/tabular datasets.
+      </p>
+
+      <h2>🧪 How Prediction Works</h2>
+      <p>
+        User enters input data → Backend processes → Model predicts → Output
+        displayed.
+      </p>
+
+      <h2>🚀 Final Output</h2>
+      <p>
+        A fully working AI-powered productivity prediction system built from
+        scratch: preprocessing → ML model → backend → frontend →
+        deployment-ready.
+      </p>
+    </div>
+  </body>
+</html>
